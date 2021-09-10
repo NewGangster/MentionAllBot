@@ -17,7 +17,7 @@ client = TelegramClient('client', api_id, api_hash).start(bot_token=bot_token)
 
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
-  await event.reply("__**Im MentionAll Bot**, I can mention almost all members in group or channel 👻\nClick **/help** for more infomation__\n\n Follow [KID](https://t.me/kid_of_telegram) on Insta",
+  await event.reply("__**Im MentionAll Bot**, I can mention almost all members in group or channel 👻\nClick **/help** for more infomation__\n\n By [KID](https://t.me/kid_of_telegram)",
                     buttons=(
                       [Button.url('🍄 Updates', 'https://t.me/kidbots'),
                       Button.url('🍄 Support', 'https://t.me/tzkid')]
