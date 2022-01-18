@@ -19,17 +19,17 @@ client = TelegramClient('client', api_id, api_hash).start(bot_token=bot_token)
 async def start(event):
   await event.reply("__**Im MentionAll Bot**, I can mention almost all members in group or channel 👻\nClick **/help** for more infomation__\n\n By [GANG](https://t.me/GangsterTelegram_bot)",
                     buttons=(
-                      [Button.url('🍄 Updates', 'https://t.me/kidbots'),
+                      [Button.url('🍄 Updates', 'https://t.me/GangstersOff'),
                       Button.url('🍄 Support', 'https://t.me/GangsterTelegram_bot')]
                     ),
                     link_preview=False
                    )
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**Help Menu of MentionAllBot**\n\nCommand: /tagall\n__You can use this command with text what you want to mention others.__\n`Example: /tagall Good Morning!`\n__You can you this command as a reply to any message. Bot will tag users to that replied messsage__.\n\nBy [KID](https://t.me/kid_of_telegram)"
+  helptext = "**Help Menu of MentionAllBot**\n\nCommand: /tagall\n__You can use this command with text what you want to mention others.__\n`Example: /tagall Good Morning!`\n__You can you this command as a reply to any message. Bot will tag users to that replied messsage__.\n\nBy [GANG](https://t.me/GangstersOff)"
   await event.reply(helptext,
                     buttons=(
-                      [Button.url('🍄 Updates', 'https://t.me/kidbots'),
+                      [Button.url('🍄 Updates', 'https://t.me/GangstersOff'),
                       Button.url('🍄 Support', 'https://t.me/GangsterTelegram_bot')]
                     ),
                     link_preview=False
